@@ -108,7 +108,7 @@ T Queue<T>::pop() {
 }
 
 template<class T>
-T Queue<T>>::unsafe_peek(int idx) {
+T Queue<T>::unsafe_peek(int idx) {
   return _data[idx];
 }
 
