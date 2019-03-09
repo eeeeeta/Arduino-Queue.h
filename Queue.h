@@ -108,6 +108,11 @@ T Queue<T>::pop() {
 }
 
 template<class T>
+T Queue<T>>::unsafe_peek(int idx) {
+  return _data[idx];
+}
+
+template<class T>
 T Queue<T>::peek() {
   if(_count <= 0) return T(); // Returns empty
   else return _data[_front];
