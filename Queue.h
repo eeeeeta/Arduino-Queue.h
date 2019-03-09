@@ -58,6 +58,7 @@ class Queue {
     inline int front();
     inline int back();
     void push(const T &item);
+    T unsafe_peek(int idx);
     T peek();
     T pop();
     void clear();
